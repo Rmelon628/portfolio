@@ -4,124 +4,205 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <nav class="wrap">
-    <div class="brand">〈<span>お名前</span>〉</div>
-    <div class="navlinks">
+  <div class="wrap navbar">
+    <nav class="navlinks">
+      <a href="#profile">Profile</a>
       <a href="#about">About</a>
       <a href="#activities">Activities</a>
-      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="wrap fade-up">
-    <p class="eyebrow mono">student · algorithms</p>
-    <h1>アルゴリズムで、<br>考える筋力をつくる。</h1>
-    <p class="lede">高専でアルゴリズムを学んでいます。競技プログラミングやパソコン甲子園への挑戦を通して、より深いところまで理解を積み重ねていくのが目標です。</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHubを見る</a>
-      <a class="btn btn-ghost" href="#contact">連絡する</a>
-    </div>
+  <div class="wrap">
+    <p class="eyebrow">Student / Algorithms</p>
+    <h1>HARUMA's Portfolio<br></h1><h2>-Algorithmer-</h2>
+    <p class="lede">高専でアルゴリズムを学んでいます。競技プログラミングやパソコン甲子園への挑戦を通じて、考える力を積み重ねているところです。</p>
   </div>
-  <svg class="graph" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <g stroke="#f5b942" stroke-opacity="0.45" stroke-width="1.4">
-      <line x1="40" y1="40" x2="150" y2="90"/>
-      <line x1="150" y1="90" x2="270" y2="50"/>
-      <line x1="150" y1="90" x2="120" y2="190"/>
-      <line x1="120" y1="190" x2="230" y2="220"/>
-      <line x1="230" y1="220" x2="270" y2="50"/>
-      <line x1="40" y1="40" x2="120" y2="190"/>
+  <svg class="graph" viewBox="0 0 400 300" aria-hidden="true">
+    <g stroke="#33415c" stroke-opacity=".35" stroke-width="1.4">
+      <line x1="60" y1="60" x2="190" y2="110"/>
+      <line x1="190" y1="110" x2="330" y2="70"/>
+      <line x1="190" y1="110" x2="150" y2="230"/>
+      <line x1="150" y1="230" x2="280" y2="250"/>
+      <line x1="280" y1="250" x2="330" y2="70"/>
     </g>
-    <g fill="#f5b942">
-      <circle cx="40" cy="40" r="5"/>
-      <circle cx="150" cy="90" r="6"/>
-      <circle cx="270" cy="50" r="5"/>
-      <circle cx="120" cy="190" r="5"/>
-      <circle cx="230" cy="220" r="6"/>
+    <g fill="#33415c">
+      <circle cx="60" cy="60" r="6"/>
+      <circle cx="190" cy="110" r="7"/>
+      <circle cx="330" cy="70" r="6"/>
+      <circle cx="150" cy="230" r="6"/>
+      <circle cx="280" cy="250" r="7"/>
     </g>
   </svg>
 </section>
 
+<section id="profile">
+  <div class="wrap profile-row">
+    <img class="avatar" src="photo/My icon.png" alt="プロフィールアイコン">
+    <div class="profile-text">
+      <p class="tag">Profile</p>
+      <p class="p-name edit-name">〈お名前〉</p>
+      <p class="p-line">所属：<span class="edit-name">〈学校名をここに〉</span></p>
+      <p class="p-line">部活動：<span class="edit-name">〈部活動名をここに〉</span></p>
+    </div>
+  </div>
+</section>
+
 <section id="about">
-  <div class="wrap about">
-    <h2><span class="idx mono">01</span>&nbsp; About</h2>
-    <p>はじめまして、<span class="edit-name">〈お名前・専攻・学年をここに〉</span>です。アルゴリズムの学習を軸に、AtCoderやかつてのアルゴ式などで問題演習を重ねてきました。</p>
-    <p>今後は競技プログラミングの大会やパソコン甲子園への出場を通じて、より実践的な力をつけていきたいと考えています。並行して、AI・Web開発など興味の幅も広げているところです。</p>
+  <div class="wrap">
+    <p class="tag">About</p>
+    <p class="about-text">はじめまして、<span class="edit-name">〈お名前・専攻・学年をここに〉</span>です。アルゴリズムの学習を軸に、AtCoderやかつてのアルゴ式で問題演習を重ねてきました。今後は競技プログラミングの大会やパソコン甲子園への出場を通じて、より実践的な力をつけていきたいと考えています。</p>
   </div>
 </section>
 
 <section id="activities">
   <div class="wrap">
-    <h2><span class="idx mono">02</span>&nbsp; Activities</h2>
+    <p class="tag">Activities</p>
     <ul class="timeline">
       <li>
-        <p class="t-date mono">2026</p>
-        <p class="t-title">松尾研究室 GCIベーシック 修了</p>
-        <p class="t-desc">東京大学松尾研究室が提供する、データサイエンス・機械学習の基礎講座を修了。</p>
+        <span class="t-dot"></span>
+        <div class="t-content">
+          <p class="t-date">2026</p>
+          <p class="t-title">松尾研究室 GCIベーシック 修了</p>
+          <p class="t-desc">東京大学松尾研究室が提供する、データサイエンス・機械学習の基礎講座を修了。</p>
+        </div>
       </li>
       <li>
-        <p class="t-date mono">2026</p>
-        <p class="t-title">高専ブートキャンプ2026 参加</p>
-        <p class="t-desc">短期集中型のプログラムに参加し、開発経験を積んだ。</p>
+        <span class="t-dot"></span>
+        <div class="t-content">
+          <p class="t-date">2026</p>
+          <p class="t-title">高専ブートキャンプ2026 参加</p>
+          <p class="t-desc">短期集中型のプログラムに参加し、開発経験を積んだ。</p>
+        </div>
       </li>
       <li>
-        <p class="t-date mono">予定</p>
-        <p class="t-title">塾システムの効率化開発</p>
-        <p class="t-desc">通っている塾の業務・学習管理を効率化するプログラムを、これから開発していく予定。</p>
+        <span class="t-dot"></span>
+        <div class="t-content">
+          <p class="t-date">予定</p>
+          <p class="t-title">塾システムの効率化開発</p>
+          <p class="t-desc">通っている塾の業務・学習管理を効率化するプログラムを、これから開発していく予定。</p>
+        </div>
       </li>
     </ul>
   </div>
 </section>
 
-<section id="skills">
+<section id="certs">
   <div class="wrap">
-    <h2><span class="idx mono">03</span>&nbsp; Skills</h2>
-    <div class="skills">
-      <span class="skill accent mono">Python</span>
-      <span class="skill accent mono">C++</span>
-      <span class="skill mono">HTML</span>
-      <span class="skill mono">CSS</span>
-      <span class="skill mono">JavaScript</span>
-      <span class="skill mono">AtCoder</span>
-      <span class="skill mono">Git / GitHub</span>
-    </div>
+    <p class="tag">Certifications</p>
+    <ul class="cert-list">
+      <li>
+        <span class="cert-status">取得予定</span>
+        <div>
+          <p class="cert-name">基本情報技術者試験（FE）</p>
+          <p class="cert-desc">ITエンジニアの基礎知識を証明する国家資格。受験に向けて学習中。</p>
+        </div>
+      </li>
+      <li>
+        <span class="cert-status">検討中</span>
+        <div>
+          <p class="cert-name">〈資格名をここに〉</p>
+          <p class="cert-desc">〈説明をここに〉</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
 <section id="projects">
   <div class="wrap">
-    <h2><span class="idx mono">04</span>&nbsp; Projects</h2>
-    <div class="empty-state">
-      <p>制作物は現在準備中です。競技プログラミングの記録や個人開発の成果を、これから少しずつここに追加していく予定です。</p>
-      <a class="btn btn-ghost" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHubで進捗を見る</a>
+    <p class="tag">Projects</p>
+    <div class="grid">
+      <div class="card card-empty">
+        <p>準備中</p>
+        <span>制作物は現在準備中です</span>
+      </div>
+      <div class="card card-empty">
+        <p>Coming soon</p>
+        <span>競技プログラミングの記録を追加予定</span>
+      </div>
+      <div class="card card-empty">
+        <p>Coming soon</p>
+        <span>個人開発の成果を追加予定</span>
+      </div>
+    </div>
+    <a class="btn btn-line" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHubで進捗を見る</a>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="tag">Skills</p>
+    <p class="skills-hint">タップすると習熟度とコメントを確認できます</p>
+    <div class="skills" id="skills-list">
+      <button class="skill" data-skill="Python" data-level="70" data-comment="AtCoderの茶色問題まで解ける">
+        <span>Python</span><span class="skill-pct">70%</span>
+      </button>
+      <button class="skill" data-skill="C++" data-level="65" data-comment="基本文法とアルゴリズムの実装に使用">
+        <span>C++</span><span class="skill-pct">65%</span>
+      </button>
+      <button class="skill" data-skill="HTML" data-level="55" data-comment="ページ構造を組める">
+        <span>HTML</span><span class="skill-pct">55%</span>
+      </button>
+      <button class="skill" data-skill="CSS" data-level="50" data-comment="レイアウト・装飾を一通り実装できる">
+        <span>CSS</span><span class="skill-pct">50%</span>
+      </button>
+      <button class="skill" data-skill="JavaScript" data-level="45" data-comment="簡単な動きの実装ができる">
+        <span>JavaScript</span><span class="skill-pct">45%</span>
+      </button>
+      <button class="skill" data-skill="AtCoder" data-level="40" data-comment="現在の色・レートをここに書く">
+        <span>AtCoder</span><span class="skill-pct">40%</span>
+      </button>
+      <button class="skill" data-skill="Git / GitHub" data-level="55" data-comment="基本的なコミット・プッシュができる">
+        <span>Git / GitHub</span><span class="skill-pct">55%</span>
+      </button>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="wrap contact">
-    <h2><span class="idx mono">05</span>&nbsp; Contact</h2>
-    <p>ご連絡は下記からお願いします。</p>
-    <div class="contact-links">
-      <a class="btn btn-ghost" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
+  <div class="wrap">
+    <p class="tag">Contact</p>
+    <p class="contact-text">ご連絡は下記からお願いします。</p>
+    <a class="btn btn-primary" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHub</a>
   </div>
 </section>
 
-<footer class="wrap">
-  <p>&copy; 2026 〈お名前〉</p>
+<footer>
+  <div class="wrap footer-inner">
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#certs">Certifications</a>
+      <a href="#projects">Projects</a>
+
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </footer>
+
+<div class="modal-overlay" id="skill-modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="閉じる">×</button>
+    <h3 class="modal-title" id="modal-title"></h3>
+    <p class="modal-pct"></p>
+    <div class="modal-bar" aria-hidden="true"></div>
+    <p class="modal-comment"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
