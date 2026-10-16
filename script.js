@@ -54,4 +54,38 @@ document.querySelectorAll('.skill').forEach((skill) => {
 
 document.getElementById('modal-close').addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeModal();
+    closeCertModal();
+  }
+});
+// Certifications: タップした項目の修了書画像をモーダルで表示する
+const certModal = document.getElementById('cert-modal');
+const certModalTitle = document.getElementById('cert-modal-title');
+const certModalImage = document.getElementById('cert-modal-image');
+
+const openCertModal = (item) => {
+  const imageSrc = item.dataset.image;
+  if (!imageSrc) return;
+  const nameEl = item.querySelector('.cert-name');
+  certModalTitle.textContent = nameEl ? nameEl.textContent : '';
+  certModalImage.src = imageSrc;
+  certModalImage.alt = nameEl ? nameEl.textContent : '証明書画像';
+  certModal.hidden = false;
+};
+
+const closeCertModal = () => { certModal.hidden = true; };
+
+document.querySelectorAll('.cert-item').forEach((item) => {
+  item.addEventListener('click', () => openCertModal(item));
+  item.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openCertModal(item);
+    }
+  });
+});
+
+document.getElementById('cert-modal-close').addEventListener('click', closeCertModal);
+certModal.addEventListener('click', (e) => { if (e.target === certModal) closeCertModal(); });
