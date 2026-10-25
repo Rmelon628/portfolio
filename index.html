@@ -201,17 +201,29 @@
       <div class="card card-empty">
         <p>BlackJack</p>
         <span>pythonを用いたBlackJackというゲームの作成.</span>
+        <div class="card-links">
+          <a class="card-link gallery-trigger" href="#"
+            data-title="BlackJack ゲーム風景"
+            data-images="../products/blackjack_prototype_2026/photo/p1.png,../products/blackjack_prototype_2026/photo/p2.png,../products/blackjack_prototype_2026/photo/p6.png,../products/blackjack_prototype_2026/photo/p4.png,../products/blackjack_prototype_2026/photo/p5.png">ゲーム風景を閲覧する</a>
+          <a class="card-link" href="https://github.com/Rmelon628/blackjack_prototype_2026" target="_blank" rel="noopener">GitHubで確認する</a>
+        </div>
       </div>
       <div class="card card-empty">
-        <p>Coming soon</p>
-        <span>競技プログラミングの記録を追加予定</span>
+        <p>TODOアプリ</p>
+        <span>ハッカソンでチーム連携して作成した高専生がつかうのに特化させたto doのwebアプリ.</span>
+        <div class="card-links">
+          <a class="card-link gallery-trigger" href="#"
+                data-title="TODOアプリ"
+                data-images="../products/2026-hackathon/photo/p3.png,../products/2026-hackathon/photo/p6.png,../products/2026-hackathon/photo/p7.png,../products/2026-hackathon/photo/p8.png">kosen-todoの画像の表示</a>
+          <a class="card-link" href="https://github.com/knyzk14/kosen_todo" target="_blank" rel="noopener">GitHubで確認する</a>
+        </div>
       </div>
-      <div class="card card-empty">
+      <div class="card card-empty" tabindex="0" role="button" aria-label="none">
         <p>Coming soon</p>
         <span>個人開発の成果を追加予定</span>
       </div>
     </div>
-    <a class="btn btn-line" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHubで進捗を見る</a>
+    <!-- <a class="btn btn-line" href="https://github.com/Rmelon628" target="_blank" rel="noopener">GitHubで進捗を見る</a> -->
   </div>
 </section>
 
@@ -220,26 +232,26 @@
     <p class="tag">Skills</p>
     <p class="skills-hint">タップすると習熟度とコメントを確認できます</p>
     <div class="skills" id="skills-list">
-      <button class="skill" data-skill="Python" data-level="50" data-comment="AtCoderの茶色問題まで解ける">
-        <span>Python</span><span class="skill-pct">50%</span>
+      <button class="skill" data-skill="Python" data-level="30" data-comment="基本的な文法,関数定義,オブジェクト指向の基本的な使い方を理解し，コーディングできる.">
+        <span>Python</span><span class="skill-pct">30%</span>
       </button>
-      <button class="skill" data-skill="C++" data-level="50" data-comment="基本文法とアルゴリズムの実装に使用">
-        <span>C++</span><span class="skill-pct">50%</span>
+      <button class="skill" data-skill="C++" data-level="20" data-comment="基本文法を理解し，コーディングできる">
+        <span>C++</span><span class="skill-pct">20%</span>
       </button>
       <button class="skill" data-skill="HTML" data-level="30" data-comment="ページ構造を組める">
         <span>HTML</span><span class="skill-pct">30%</span>
       </button>
-      <button class="skill" data-skill="CSS" data-level="40" data-comment="レイアウト・装飾を一通り実装できる">
-        <span>CSS</span><span class="skill-pct">40%</span>
+      <button class="skill" data-skill="CSS" data-level="20" data-comment="レイアウト・装飾を一通り実装できる">
+        <span>CSS</span><span class="skill-pct">20%</span>
       </button>
       <button class="skill" data-skill="JavaScript" data-level="20" data-comment="簡単な動きの実装ができる">
         <span>JavaScript</span><span class="skill-pct">20%</span>
       </button>
-      <button class="skill" data-skill="AtCoder" data-level="40" data-comment="まだレートに出場していない．">
-        <span>AtCoder</span><span class="skill-pct">40%</span>
+      <button class="skill" data-skill="AtCoder" data-level="10" data-comment="まだレートに出場していない．">
+        <span>AtCoder</span><span class="skill-pct">10%</span>
       </button>
-      <button class="skill" data-skill="Git / GitHub" data-level="40" data-comment="基本的なコミット・プッシュができる">
-        <span>Git / GitHub</span><span class="skill-pct">40%</span>
+      <button class="skill" data-skill="Git / GitHub" data-level="20" data-comment="コミット・プッシュ・ブランチ作成・PRを送ることができる">
+        <span>Git / GitHub</span><span class="skill-pct">20%</span>
       </button>
     </div>
   </div>
@@ -281,6 +293,13 @@
     <button class="modal-close" id="cert-modal-close" aria-label="閉じる">×</button>
     <h3 class="modal-title" id="cert-modal-title"></h3>
     <img class="cert-modal-image" id="cert-modal-image" src="" alt="">
+  </div>
+</div>
+<div class="modal-overlay" id="gallery-modal" hidden>
+  <div class="modal-card gallery-modal-card" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
+    <button class="modal-close" id="gallery-modal-close" aria-label="閉じる">×</button>
+    <h3 class="modal-title" id="gallery-modal-title"></h3>
+    <div class="gallery-list" id="gallery-list"></div>
   </div>
 </div>
 <script src="script.js"></script>

@@ -510,6 +510,60 @@ h2 {
   color: var(--muted);
 }
 
+.card-links {
+  display: grid;
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.card-link {
+  display: block;
+
+  padding: 8px 14px;
+
+  border: 1px solid var(--line);
+  border-radius: 2px;
+
+  background: var(--bg);
+
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+
+  transition: border-color 0.15s;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  border-color: var(--accent);
+}
+
+.gallery-modal-card {
+  max-width: 480px;
+}
+
+.gallery-list {
+  display: grid;
+  gap: 12px;
+
+  max-height: 65vh;
+  margin-top: 8px;
+
+  overflow-y: auto;
+}
+
+.gallery-list img {
+  display: block;
+
+  width: auto;
+  max-width: 100%;
+  max-height: 50vh;
+  margin: 0 auto;
+
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
 
 /* =========================================================
    Skills
@@ -717,6 +771,7 @@ footer {
 }
 
 
+
 /* =========================================================
    Responsive
    ========================================================= */
@@ -739,6 +794,17 @@ footer {
     align-items: flex-start;
 
     text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-modal-card {
+    max-width: 100%;
+    padding: 28px 18px;
+  }
+
+  .gallery-list img {
+    max-height: 40vh;
   }
 }
 

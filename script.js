@@ -58,6 +58,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeModal();
     closeCertModal();
+    closeGallery(); 
   }
 });
 // Certifications: タップした項目の修了書画像をモーダルで表示する
@@ -89,3 +90,41 @@ document.querySelectorAll('.cert-item').forEach((item) => {
 
 document.getElementById('cert-modal-close').addEventListener('click', closeCertModal);
 certModal.addEventListener('click', (e) => { if (e.target === certModal) closeCertModal(); });
+
+// Projects: ゲーム風景などの画像をまとめてモーダルで表示する
+const galleryModal = document.getElementById('gallery-modal');
+const galleryTitle = document.getElementById('gallery-modal-title');
+const galleryList = document.getElementById('gallery-list');
+
+const openGallery = (trigger) => {
+  const images = (trigger.dataset.images || '')
+    .split(',')
+    .map((src) => src.trim())
+    .filter(Boolean);
+  if (!images.length) return;
+
+  const title = trigger.dataset.title || '';
+  galleryTitle.textContent = title;
+  galleryList.innerHTML = '';
+
+  images.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = `${title} ${i + 1}`;
+    galleryList.appendChild(img);
+  });
+
+  galleryModal.hidden = false;
+};
+
+const closeGallery = () => { galleryModal.hidden = true; };
+
+document.querySelectorAll('.gallery-trigger').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    openGallery(link);
+  });
+});
+
+document.getElementById('gallery-modal-close').addEventListener('click', closeGallery);
+galleryModal.addEventListener('click', (e) => { if (e.target === galleryModal) closeGallery(); });
